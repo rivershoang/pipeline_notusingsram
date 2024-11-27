@@ -1,0 +1,27 @@
+application Find factorial number 7
+single cycle : 155/155 = 1
+pipeline 5 stage with stall: 155/370 
+pipeline 5 stage with forwarding and stall: 
+
+
+application gcd 68 and 119 (17) 
+singlecycle: 25/25 = 1
+pipeline 5 stage with stall: 25/59 
+pipeline 5 stage with forwarding and stall:
+
+
+application hex to dec number 1654
+single cycle : 214/214
+pipeline 5 stage with stall: 214/540
+pipeline 5 stage with forwarding and stall: 
+
+
+
+application stopwatch count to 00:10:00 (10s)
+singlecycle: 2018190 / 2018190
+pipeline 5 stage with stall: 2018190 / 513241
+pipeline 5 stage with forwarding and stall: 
+
+
+
+

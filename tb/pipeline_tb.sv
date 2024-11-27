@@ -38,8 +38,8 @@ module pipeline_tb ();
     io_btn = 0;
     #5 
     rst_n = 1;
-    io_sw = 32'd7;
-    #1000;
+    io_sw = 32'd2;
+    #100000000;
     $finish; 
  end
 

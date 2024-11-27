@@ -11,7 +11,7 @@ module inst_mem #(
 
 	initial
 	begin
-		$readmemh("E:/Lecture/ComputerArchitecture/pipeline_notusingsram/test/hazard/factorial.txt", ROM);
+		$readmemh("E:/Lecture/ComputerArchitecture/pipeline_notusingsram/test/hazard/hex2dec_nam.txt", ROM);
 	end
 	
 	assign rdata = ROM[raddr[ADDR_WIDTH-1:2]];
