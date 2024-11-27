@@ -11,7 +11,7 @@ module pc (
          pc_out <= 0;
       end else if (pc_enable) begin 
          pc_out <= pc_in;
-      end else begin 
+      end else if (~pc_enable) begin 
          pc_out <= pc_out;
       end
    end

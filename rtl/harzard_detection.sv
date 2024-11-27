@@ -22,7 +22,7 @@ module harzard_detection (
 
    logic [ 4:0]   rd_addr_E   ,
                   rs1_addr_D  ,
-                  rs2_data_D  ,
+                  rs2_addr_D  ,
                   rd_addr_M   ,
                   rd_addr_W   ;
    
@@ -42,80 +42,56 @@ module harzard_detection (
    assign is_jump  = (instr_E[6:0] == 7'b1101111) ? 1 : 0;
    assign is_jalr = (instr_E[6:0] == 7'b1100111) ? 1 : 0;
 
-   always_comb begin 
-      if  (((rd_addr_E == rs1_addr_D)  && (rd_addr_E != 0) && (rs1_addr_D != 0)) || 
-                     ((rd_addr_E == rs2_addr_D) && (rs2_addr_D !=0) && (rd_addr_E != 0)) || 
-                     (is_load && ((rd_addr_E == rs1_addr_D) || (rd_addr_E == rs2_addr_D))) && (rd_addr_E != 0)) begin
+   always_comb begin
+      // Default values
+      pc_enable = 1;
+      IF_ID_enable = 1;
+      ID_EX_enable = 1;
+      EX_ME_enable = 1;
+      ME_WB_enable = 1;
+  
+      IF_ID_flush = 0;
+      ID_EX_flush = 0;
+      EX_ME_flush = 0;
+      ME_WB_flush = 0;
+  
+      // hazard jalr -> raw -> branch
+      if ((instr_D[6:0] == 7'b1100111) && (rd_addr_E == rs1_addr_D) && (rd_addr_E != 0)) begin
+          pc_enable = 0;
+          IF_ID_enable = 0;
+          ID_EX_flush = 1;
+          ID_EX_enable = 0;
+      end else if ((instr_D[6:0] == 7'b1100111) && (rd_addr_M == rs1_addr_D) && (rd_addr_M != 0)) begin
+          pc_enable = 0;
+          IF_ID_enable = 0;
+          EX_ME_flush = 1;
+          ID_EX_enable = 0;
+      end else if ((instr_D[6:0] == 7'b1100111) && (rd_addr_W == rs1_addr_D) && (rd_addr_W != 0)) begin
          pc_enable = 0;
-
          IF_ID_enable = 0;
-         IF_ID_flush = 0;
-
-         ID_EX_flush = 1;
-         ID_EX_enable = 0;
-
-         EX_ME_enable = 1;
-         EX_ME_flush = 0;
-
-         ME_WB_enable = 1;
-         ME_WB_flush = 0;
-         end else if (((rd_addr_M == rs1_addr_D)  && (rd_addr_M != 0) && (rs1_addr_D != 0)) || 
-                     ((rd_addr_M == rs2_addr_D) && (rs2_addr_D !=0) && (rd_addr_M !=0))||
-                     (is_load && ((rd_addr_M == rs1_addr_D) || (rd_addr_M == rs2_addr_D))) && (rd_addr_M != 0)) begin
-         pc_enable = 0;
-         
-         IF_ID_enable = 0;
-         IF_ID_flush = 0;
-
-         ID_EX_flush = 0;
-         ID_EX_enable = 0;
-
-         EX_ME_flush = 1;
-         EX_ME_enable = 0;
-
-         ME_WB_enable = 1;
-         ME_WB_flush = 0;
-         end else if (((rd_addr_W == rs1_addr_D)  && (rd_addr_W != 0) && (rs1_addr_D != 0)) || 
-                     ((rd_addr_W == rs2_addr_D) && (rs2_addr_D != 0) && (rd_addr_W != 0)) ||
-                     (is_load && ((rd_addr_W == rs1_addr_D) || (rd_addr_W == rs2_addr_D))) && (rd_addr_W != 0)) begin
-         pc_enable = 0;
-
-         IF_ID_enable = 0;
-         IF_ID_flush = 0;
-
-         ID_EX_flush = 0;
-         ID_EX_enable = 0;
-
-         EX_ME_flush = 0;
-         EX_ME_enable = 0;
-
          ME_WB_flush = 1;
-         ME_WB_enable = 0;
-         end else if (is_taken && (is_branch || is_jump || is_jalr)) begin 
-         pc_enable = 1;
-               
-         IF_ID_enable = 0;
-         IF_ID_flush = 1;
-               
-         ID_EX_flush = 1;
          ID_EX_enable = 0;
-               
-         EX_ME_enable = 1;
-         EX_ME_flush = 0;
-               
-         ME_WB_enable = 1;
-         ME_WB_flush = 0;
-      end else begin 
-         pc_enable = 1;
-         IF_ID_enable = 1;
-         ID_EX_enable = 1;
-         EX_ME_enable = 1;
-         ME_WB_enable = 1;
-         IF_ID_flush = 0;
-         ID_EX_flush = 0;
-         EX_ME_flush = 0;
-         ME_WB_flush = 0;
+      end else if (((rd_addr_E == rs1_addr_D) || (rd_addr_E == rs2_addr_D)) && (rd_addr_E != 0)) begin
+          pc_enable = 0;
+          IF_ID_enable = 0;
+          ID_EX_flush = 1;
+          ID_EX_enable = 0;
+      end else if (((rd_addr_M == rs1_addr_D) || (rd_addr_M == rs2_addr_D)) && (rd_addr_M != 0)) begin
+          pc_enable = 0;
+          IF_ID_enable = 0;
+          EX_ME_flush = 1;
+          ID_EX_enable = 0;
+      end else if (((rd_addr_W == rs1_addr_D) || (rd_addr_W == rs2_addr_D)) && (rd_addr_W != 0)) begin
+          pc_enable = 0;
+          IF_ID_enable = 0;
+          ME_WB_flush = 1;
+          ID_EX_enable = 0;
+      end else if (is_taken && (is_branch || is_jump || is_jalr)) begin
+          pc_enable = 1;
+          IF_ID_flush = 1;
+          ID_EX_flush = 1;
+          ID_EX_enable = 0;
       end
-   end
-
+  end
+  
 endmodule 
