@@ -1,0 +1,163 @@
+E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/control_unit.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/control_unit.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package opcode_type
+-- Compiling module control_unit
+-- Importing package opcode_type
+
+Top level modules:
+	control_unit
+
+} {} {}} E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/IF_ID_reg.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/IF_ID_reg.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module IF_ID_reg
+
+Top level modules:
+	IF_ID_reg
+
+} {} {}} E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/harzard_detection.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/harzard_detection.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module harzard_detection
+
+Top level modules:
+	harzard_detection
+
+} {} {}} E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/data_memory.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/data_memory.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module data_memory
+
+Top level modules:
+	data_memory
+
+} {} {}} E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/alu.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/alu.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package alu_opcode
+-- Compiling module alu
+-- Importing package alu_opcode
+
+Top level modules:
+	alu
+
+} {} {}} E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/pc.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/pc.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module pc
+
+Top level modules:
+	pc
+
+} {} {}} E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/shift_reg.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/shift_reg.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module shift_reg
+
+Top level modules:
+	shift_reg
+
+} {} {}} E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/inst_mem.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/inst_mem.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module inst_mem
+
+Top level modules:
+	inst_mem
+
+} {} {}} E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/branch_select.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/branch_select.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package opcode_type
+-- Compiling module branch_select
+-- Importing package opcode_type
+
+Top level modules:
+	branch_select
+
+} {} {}} E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/immgen.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/immgen.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package opcode_type
+-- Compiling module immgen
+-- Importing package opcode_type
+
+Top level modules:
+	immgen
+
+} {} {}} E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/regfile.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/regfile.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module regfile
+
+Top level modules:
+	regfile
+
+} {} {}} E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/input_peri.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/input_peri.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module input_peri
+
+Top level modules:
+	input_peri
+
+} {} {}} E:/Lecture/ComputerArchitecture/pipeline_notusingsram/tb/pipeline_tb.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/ComputerArchitecture/pipeline_notusingsram/tb/pipeline_tb.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module pipeline_tb
+
+Top level modules:
+	pipeline_tb
+
+} {} {}} E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/output_peri.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/output_peri.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module output_peri
+
+Top level modules:
+	output_peri
+
+} {} {}} E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/sub_compare.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/sub_compare.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module sub_compare
+
+Top level modules:
+	sub_compare
+
+} {} {}} E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/EX_ME_reg.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/EX_ME_reg.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module EX_ME_reg
+
+Top level modules:
+	EX_ME_reg
+
+} {} {}} E:/Lecture/ComputerArchitecture/pipeline_notusingsram/tb/harzard_detection_tb.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/ComputerArchitecture/pipeline_notusingsram/tb/harzard_detection_tb.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module harzard_detection_tb
+
+Top level modules:
+	harzard_detection_tb
+
+} {} {}} E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/lsu.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/lsu.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module lsu
+
+Top level modules:
+	lsu
+
+} {} {}} E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/ID_EX_reg.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/ID_EX_reg.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module ID_EX_reg
+
+Top level modules:
+	ID_EX_reg
+
+} {} {}} E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/pipeline.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/pipeline.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module pipeline
+
+Top level modules:
+	pipeline
+
+} {} {}} E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/ME_WB_reg.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/ME_WB_reg.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module ME_WB_reg
+
+Top level modules:
+	ME_WB_reg
+
+} {} {}} E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/brc.sv {1 {vlog -work work -vopt -sv -stats=none E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/brc.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module brc
+
+Top level modules:
+	brc
+
+} {} {}}
