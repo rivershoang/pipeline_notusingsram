@@ -7,7 +7,7 @@ module pipeline_tb ();
     logic  [ 3:0]   io_btn;
 
   // Instantiate the single_cycle module
-  pipeline dut (
+  pipeline_forward dut (
     .clk   (clk     )          ,
     .rst_n   (rst_n )          ,
     .pc_debug (pc_debug)       ,
@@ -39,8 +39,8 @@ module pipeline_tb ();
     #5 
     rst_n = 1;
     io_sw = 32'd2;
-    #100000000;
-    $finish; 
+    #100;
+     $finish; 
  end
 
 

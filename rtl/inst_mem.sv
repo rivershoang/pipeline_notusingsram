@@ -1,3 +1,4 @@
+
 module inst_mem #(
    parameter DATA_WIDTH = 32, 
    parameter ADDR_WIDTH = 13,
@@ -11,7 +12,7 @@ module inst_mem #(
 
 	initial
 	begin
-		$readmemh("E:/Lecture/ComputerArchitecture/pipeline_notusingsram/test/hazard/s_nam.txt", ROM);
+		$readmemh("E:/Lecture/ComputerArchitecture/pipeline_notusingsram/test/forwarding/gcd.hex", ROM);
 	end
 	
 	assign rdata = ROM[raddr[ADDR_WIDTH-1:2]];

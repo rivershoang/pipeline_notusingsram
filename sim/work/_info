@@ -20,15 +20,14 @@ n@_opt
 Z3 OL;O;2020.4;71
 R0
 T_opt1
-!s110 1732726391
-VN7bWX4hBN`7N;Oz?28@La3
+!s110 1733063489
+V5MPgbh:K2NIXBXERK9go43
 04 11 4 work pipeline_tb fast 0
-=1-d8bbc176143d-67474e77-1db-4780
+=1-d8bbc176143d-674c7341-261-6fe8
 R1
 R2
 n@_opt1
 R3
-R0
 T_opt2
 !s110 1732703137
 V?Y=6eZI5LPDaPQW:05>[E3
@@ -42,7 +41,7 @@ R0
 valu
 Z4 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
 DXx4 work 10 alu_opcode 0 22 95=@<7ka;HlOGQ63]UNQ22
-Z5 !s110 1732727294
+Z5 !s110 1733063480
 !i10b 1
 !s100 iRKX^GBNa37R>b>JO]4GW0
 Z6 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -52,14 +51,14 @@ Z7 dE:/Lecture/ComputerArchitecture/pipeline_notusingsram/sim
 w1731991946
 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/alu.sv
 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/alu.sv
-!i122 2907
+!i122 3921
 L0 3 50
 Z8 VDg1SIo80bB@j0V0VzS_@n1
 Z9 OL;L;2020.4;71
 r1
 !s85 0
 31
-Z10 !s108 1732727294.000000
+Z10 !s108 1733063480.000000
 Z11 !s107 ../rtl/include/alu_opcode.svh|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/alu.sv|
 Z12 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/alu.sv|
 !i113 0
@@ -77,7 +76,7 @@ R7
 Z14 w1731860547
 8../rtl/include/alu_opcode.svh
 F../rtl/include/alu_opcode.svh
-!i122 2907
+!i122 3921
 Z15 L0 4 0
 V95=@<7ka;HlOGQ63]UNQ22
 R9
@@ -103,7 +102,7 @@ R7
 w1732362967
 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/branch_select.sv
 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/branch_select.sv
-!i122 2908
+!i122 3922
 L0 3 33
 R8
 R9
@@ -118,7 +117,7 @@ R13
 R2
 vbrc
 R4
-Z17 !s110 1732727295
+R5
 !i10b 1
 !s100 M?SSVEhlfS2LfdNk=B2oH2
 R6
@@ -128,14 +127,14 @@ R7
 w1731991955
 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/brc.sv
 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/brc.sv
-!i122 2909
+!i122 3923
 L0 1 21
 R8
 R9
 r1
 !s85 0
 31
-Z18 !s108 1732727295.000000
+R10
 !s107 E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/brc.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/brc.sv|
 !i113 0
@@ -144,7 +143,7 @@ R2
 vcontrol_unit
 R4
 R16
-R17
+R5
 !i10b 1
 !s100 ho_zO>NeDf42X:HX1RPz91
 R6
@@ -154,14 +153,14 @@ R7
 w1732359893
 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/control_unit.sv
 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/control_unit.sv
-!i122 2910
+!i122 3924
 L0 3 97
 R8
 R9
 r1
 !s85 0
 31
-R18
+R10
 !s107 ../rtl//include/opcode_type.svh|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/control_unit.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/control_unit.sv|
 !i113 0
@@ -169,7 +168,7 @@ R13
 R2
 vdata_memory
 R4
-Z19 !s110 1732727296
+Z17 !s110 1733063482
 !i10b 1
 !s100 ZH2:jlHf9;W[X4b2IXI;l0
 R6
@@ -179,14 +178,14 @@ R7
 R14
 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/data_memory.sv
 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/data_memory.sv
-!i122 2925
-Z20 L0 1 33
+!i122 3939
+Z18 L0 1 33
 R8
 R9
 r1
 !s85 0
 31
-Z21 !s108 1732727296.000000
+Z19 !s108 1733063482.000000
 !s107 E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/data_memory.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/data_memory.sv|
 !i113 0
@@ -194,7 +193,7 @@ R13
 R2
 vEX_ME_reg
 R4
-R17
+R5
 !i10b 1
 !s100 DbUYZaKz7o6FGjRWSeZFd1
 R6
@@ -202,25 +201,25 @@ I9[n7>PWeESS^JM@cQ^[oe2
 S1
 R7
 w1732360053
-Z22 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/EX_ME_reg.sv
-Z23 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/EX_ME_reg.sv
-!i122 2911
+Z20 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/EX_ME_reg.sv
+Z21 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/EX_ME_reg.sv
+!i122 3925
 L0 1 82
 R8
 R9
 r1
 !s85 0
 31
-R18
+R10
 !s107 E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/EX_ME_reg.sv|
-Z24 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/EX_ME_reg.sv|
+Z22 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/EX_ME_reg.sv|
 !i113 0
 R13
 R2
 n@e@x_@m@e_reg
 XEX_ME_reg_sv_unit
 R4
-Z25 !s110 1732034939
+Z23 !s110 1732034939
 V1_i;?V:[BdzSY:JXRBZj81
 r1
 !s85 0
@@ -230,21 +229,46 @@ I1_i;?V:[BdzSY:JXRBZj81
 !i103 1
 S1
 R7
-Z26 w1732034437
-R22
-R23
-Z27 F../rtl/include/signals.svh
+Z24 w1732034437
+R20
+R21
+Z25 F../rtl/include/signals.svh
 !i122 15
-Z28 L0 5 0
+Z26 L0 5 0
 R9
 31
-Z29 !s108 1732034939.000000
+Z27 !s108 1732034939.000000
 !s107 ../rtl/include/signals.svh|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/EX_ME_reg.sv|
-R24
+R22
 !i113 0
 R13
 R2
 n@e@x_@m@e_reg_sv_unit
+vforwarding_unit
+R4
+R17
+!i10b 1
+!s100 g912;Q]7G:W@;Ken2O0B61
+R6
+IKeM_WGb5<64@L[WLb?3A33
+S1
+R7
+w1733063070
+8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/forwarding_unit.sv
+FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/forwarding_unit.sv
+!i122 3944
+L0 1 89
+R8
+R9
+r1
+!s85 0
+31
+R19
+!s107 E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/forwarding_unit.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/forwarding_unit.sv|
+!i113 0
+R13
+R2
 vharzard_dection
 R4
 !s110 1732084279
@@ -255,24 +279,24 @@ IYDo_YnGf_k;Id4K>LO1o51
 S1
 R7
 w1732082075
-Z30 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/harzard_detection.sv
-Z31 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/harzard_detection.sv
+Z28 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/harzard_detection.sv
+Z29 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/harzard_detection.sv
 !i122 47
-R20
+R18
 R8
 R9
 r1
 !s85 0
 31
 !s108 1732084279.000000
-Z32 !s107 E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/harzard_detection.sv|
-Z33 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/harzard_detection.sv|
+Z30 !s107 E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/harzard_detection.sv|
+Z31 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/harzard_detection.sv|
 !i113 0
 R13
 R2
 vharzard_detection
 R4
-R17
+R5
 !i10b 1
 !s100 Wa:<nKmnJY@D;AH<jR[Bm3
 R6
@@ -280,24 +304,24 @@ I:;R`NmnFIQS35XOCQ0gHf3
 S1
 R7
 w1732711796
-R30
-R31
-!i122 2912
+R28
+R29
+!i122 3926
 L0 1 97
 R8
 R9
 r1
 !s85 0
 31
-R18
-R32
-R33
+R10
+R30
+R31
 !i113 0
 R13
 R2
 vharzard_detection_tb
 R4
-R19
+R17
 !i10b 1
 !s100 8D`2KMojOMJW1c9FjC5OR3
 R6
@@ -307,22 +331,47 @@ R7
 w1732307073
 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/tb/harzard_detection_tb.sv
 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/tb/harzard_detection_tb.sv
-!i122 2928
+!i122 3942
 L0 2 79
 R8
 R9
 r1
 !s85 0
 31
-R21
+R19
 !s107 E:/Lecture/ComputerArchitecture/pipeline_notusingsram/tb/harzard_detection_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/tb/harzard_detection_tb.sv|
 !i113 0
 R13
 R2
-vID_EX_reg
+vhazard_unit
 R4
 R17
+!i10b 1
+!s100 KzE5nh6aY0lTngW;e=C`Q2
+R6
+I12SB]jdjz6@Qao;jNOE412
+S1
+R7
+w1732876011
+8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/hazard_unit.sv
+FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/hazard_unit.sv
+!i122 3945
+L0 1 67
+R8
+R9
+r1
+!s85 0
+31
+R19
+!s107 E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/hazard_unit.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/hazard_unit.sv|
+!i113 0
+R13
+R2
+vID_EX_reg
+R4
+R5
 !i10b 1
 !s100 zM`9nXiFg;QfUVPJJbJ:W3
 R6
@@ -332,14 +381,14 @@ R7
 w1732359983
 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/ID_EX_reg.sv
 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/ID_EX_reg.sv
-!i122 2913
+!i122 3927
 L0 1 111
 R8
 R9
 r1
 !s85 0
 31
-R18
+R10
 !s107 E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/ID_EX_reg.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/ID_EX_reg.sv|
 !i113 0
@@ -348,7 +397,7 @@ R2
 n@i@d_@e@x_reg
 XID_EX_reg_sv_unit
 R4
-R25
+R23
 VcP7bYRU]=L<NQ`j^zQSf<2
 r1
 !s85 0
@@ -361,12 +410,12 @@ R7
 w1732034930
 8E:\Lecture\ComputerArchitecture\pipeline_notusingsram\rtl\ID_EX_reg.sv
 FE:\Lecture\ComputerArchitecture\pipeline_notusingsram\rtl\ID_EX_reg.sv
-R27
+R25
 !i122 16
-R28
+R26
 R9
 31
-R29
+R27
 !s107 ../rtl/include/signals.svh|E:\Lecture\ComputerArchitecture\pipeline_notusingsram\rtl\ID_EX_reg.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:\Lecture\ComputerArchitecture\pipeline_notusingsram\rtl\ID_EX_reg.sv|
 !i113 0
@@ -375,7 +424,7 @@ R2
 n@i@d_@e@x_reg_sv_unit
 vIF_ID_reg
 R4
-R17
+R5
 !i10b 1
 !s100 X4?7ZClXIF6U@TP70ZfA13
 R6
@@ -383,25 +432,25 @@ IADBinR;Db8U[IDZXi;1lW2
 S1
 R7
 w1732333983
-Z34 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/IF_ID_reg.sv
-Z35 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/IF_ID_reg.sv
-!i122 2914
-Z36 L0 1 30
+Z32 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/IF_ID_reg.sv
+Z33 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/IF_ID_reg.sv
+!i122 3928
+Z34 L0 1 30
 R8
 R9
 r1
 !s85 0
 31
-R18
+R10
 !s107 E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/IF_ID_reg.sv|
-Z37 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/IF_ID_reg.sv|
+Z35 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/IF_ID_reg.sv|
 !i113 0
 R13
 R2
 n@i@f_@i@d_reg
 XIF_ID_reg_sv_unit
 R4
-R25
+R23
 VVXBF;1VZMgT@G4=46W>N;3
 r1
 !s85 0
@@ -411,17 +460,17 @@ IVXBF;1VZMgT@G4=46W>N;3
 !i103 1
 S1
 R7
-R26
-R34
-R35
-R27
+R24
+R32
+R33
+R25
 !i122 17
-R28
+R26
 R9
 31
-R29
+R27
 !s107 ../rtl/include/signals.svh|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/IF_ID_reg.sv|
-R37
+R35
 !i113 0
 R13
 R2
@@ -429,7 +478,7 @@ n@i@f_@i@d_reg_sv_unit
 vimmgen
 R4
 R16
-R17
+R5
 !i10b 1
 !s100 T_MBI4ZI1P3MOMBbKzzlC0
 R6
@@ -439,22 +488,22 @@ R7
 w1731991979
 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/immgen.sv
 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/immgen.sv
-!i122 2915
+!i122 3929
 L0 3 38
 R8
 R9
 r1
 !s85 0
 31
-R18
-Z38 !s107 ../rtl//include/opcode_type.svh|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/immgen.sv|
-Z39 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/immgen.sv|
+R10
+Z36 !s107 ../rtl//include/opcode_type.svh|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/immgen.sv|
+Z37 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/immgen.sv|
 !i113 0
 R13
 R2
 vinput_peri
 R4
-R17
+R5
 !i10b 1
 !s100 d[;:U7WMVUaAZ22^VFC`>1
 R6
@@ -464,14 +513,14 @@ R7
 R14
 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/input_peri.sv
 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/input_peri.sv
-!i122 2916
+!i122 3930
 L0 3 16
 R8
 R9
 r1
 !s85 0
 31
-R18
+R10
 !s107 E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/input_peri.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/input_peri.sv|
 !i113 0
@@ -479,32 +528,32 @@ R13
 R2
 vinst_mem
 R4
-R17
+R5
 !i10b 1
-!s100 Z2XhN=>bVE@>6OGM_Xl[z3
+!s100 hQSgIzNYeo2IRI1TC6^Ob2
 R6
-IETh1[GknWX^N55gUlVln70
+I5>Zh64=Fc;_<b?DDhifE03
 S1
 R7
-w1732726369
-8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/inst_mem.sv
-FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/inst_mem.sv
-!i122 2917
-Z40 L0 1 19
+w1733063476
+8E:\Lecture\ComputerArchitecture\pipeline_notusingsram\rtl\inst_mem.sv
+FE:\Lecture\ComputerArchitecture\pipeline_notusingsram\rtl\inst_mem.sv
+!i122 3931
+L0 2 19
 R8
 R9
 r1
 !s85 0
 31
-R18
-!s107 E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/inst_mem.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/inst_mem.sv|
+R10
+!s107 E:\Lecture\ComputerArchitecture\pipeline_notusingsram\rtl\inst_mem.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:\Lecture\ComputerArchitecture\pipeline_notusingsram\rtl\inst_mem.sv|
 !i113 0
 R13
 R2
 vlsu
 R4
-R17
+Z38 !s110 1733063481
 !i10b 1
 !s100 V30R70CofkA];>N>k<YS;1
 R6
@@ -514,14 +563,14 @@ R7
 R14
 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/lsu.sv
 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/lsu.sv
-!i122 2918
+!i122 3932
 L0 4 87
 R8
 R9
 r1
 !s85 0
 31
-R18
+R10
 !s107 E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/lsu.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/lsu.sv|
 !i113 0
@@ -529,7 +578,7 @@ R13
 R2
 vME_WB_reg
 R4
-R17
+R38
 !i10b 1
 !s100 aGJLIH>f5kB1Z2Bz_iSOM0
 R6
@@ -537,18 +586,18 @@ ImN]B]oO[HUTdYz73LM@VO1
 S1
 R7
 w1732360119
-Z41 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/ME_WB_reg.sv
-Z42 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/ME_WB_reg.sv
-!i122 2919
+Z39 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/ME_WB_reg.sv
+Z40 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/ME_WB_reg.sv
+!i122 3933
 L0 1 60
 R8
 R9
 r1
 !s85 0
 31
-R18
+Z41 !s108 1733063481.000000
 !s107 E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/ME_WB_reg.sv|
-Z43 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/ME_WB_reg.sv|
+Z42 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/ME_WB_reg.sv|
 !i113 0
 R13
 R2
@@ -566,23 +615,23 @@ IG_44Z@59>784OPF=[8[JF0
 S1
 R7
 w1732034746
-R41
-R42
-R27
+R39
+R40
+R25
 !i122 18
-R28
+R26
 R9
 31
 !s108 1732034940.000000
 !s107 ../rtl/include/signals.svh|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/ME_WB_reg.sv|
-R43
+R42
 !i113 0
 R13
 R2
 n@m@e_@w@b_reg_sv_unit
 Xopcode_type
 R4
-R17
+R5
 !i10b 1
 !s100 zYXd@YWIFn2F:KezVz@<X1
 R6
@@ -592,22 +641,22 @@ R7
 R14
 8../rtl//include/opcode_type.svh
 F../rtl//include/opcode_type.svh
-!i122 2915
+!i122 3929
 R15
 VVWGm:Za;^]`d8MmQ024G[1
 R9
 r1
 !s85 0
 31
-R18
-R38
-R39
+R10
+R36
+R37
 !i113 0
 R13
 R2
 voutput_peri
 R4
-R19
+R38
 !i10b 1
 !s100 W=kG8G8bhnzM?aB7d`Wh83
 R6
@@ -617,14 +666,14 @@ R7
 R14
 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/output_peri.sv
 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/output_peri.sv
-!i122 2920
+!i122 3934
 L0 2 100
 R8
 R9
 r1
 !s85 0
 31
-R21
+R41
 !s107 E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/output_peri.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/output_peri.sv|
 !i113 0
@@ -632,7 +681,7 @@ R13
 R2
 vpc
 R4
-R19
+R38
 !i10b 1
 !s100 :Y6FCBggb?CI056ll^9@R1
 R6
@@ -642,14 +691,14 @@ R7
 w1732703426
 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/pc.sv
 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/pc.sv
-!i122 2921
-R40
+!i122 3935
+L0 1 19
 R8
 R9
 r1
 !s85 0
 31
-R21
+R41
 !s107 E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/pc.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/pc.sv|
 !i113 0
@@ -657,7 +706,7 @@ R13
 R2
 vpipeline
 R4
-R19
+R17
 !i10b 1
 !s100 BW5zBbbGKP1<GgNNUQJKe3
 R6
@@ -667,39 +716,64 @@ R7
 w1732451136
 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/pipeline.sv
 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/pipeline.sv
-!i122 2922
+!i122 3936
 L0 2 322
 R8
 R9
 r1
 !s85 0
 31
-R21
+R41
 !s107 E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/pipeline.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/pipeline.sv|
 !i113 0
 R13
 R2
-vpipeline_tb
+vpipeline_forward
 R4
-R19
+R17
 !i10b 1
-!s100 ldH33Ji>bnA648kIXnN2R0
+!s100 lfJ7QeG3E8NTJkUNn@4040
 R6
-Iaa[em8WZF<J4h0ZbQESJ[0
+IYI=CFmZ=A?0gmUXn5>?n=1
 S1
 R7
-w1732726381
+w1733062358
+8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/pipeline_forward.sv
+FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/pipeline_forward.sv
+!i122 3943
+L0 2 349
+R8
+R9
+r1
+!s85 0
+31
+R19
+!s107 E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/pipeline_forward.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/pipeline_forward.sv|
+!i113 0
+R13
+R2
+vpipeline_tb
+R4
+R17
+!i10b 1
+!s100 5YnLoZQ5bHC[OG_`d5VU51
+R6
+Igl1Ckdh?Ga3J_HXh74i2P2
+S1
+R7
+w1733062604
 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/tb/pipeline_tb.sv
 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/tb/pipeline_tb.sv
-!i122 2924
+!i122 3938
 L0 2 47
 R8
 R9
 r1
 !s85 0
 31
-R21
+R19
 !s107 E:/Lecture/ComputerArchitecture/pipeline_notusingsram/tb/pipeline_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/tb/pipeline_tb.sv|
 !i113 0
@@ -707,7 +781,7 @@ R13
 R2
 vregfile
 R4
-R19
+R17
 !i10b 1
 !s100 614n3TU9z43koef9U=fL10
 R6
@@ -717,14 +791,14 @@ R7
 R14
 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/regfile.sv
 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/regfile.sv
-!i122 2923
-R36
+!i122 3937
+R34
 R8
 R9
 r1
 !s85 0
 31
-R21
+R19
 !s107 E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/regfile.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/regfile.sv|
 !i113 0
@@ -732,7 +806,7 @@ R13
 R2
 vshift_reg
 R4
-R19
+R17
 !i10b 1
 !s100 N6N:ZSkhh]5Qd<nobfUEo1
 R6
@@ -742,14 +816,14 @@ R7
 R14
 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/shift_reg.sv
 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/shift_reg.sv
-!i122 2926
+!i122 3940
 L0 1 179
 R8
 R9
 r1
 !s85 0
 31
-R21
+R19
 !s107 E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/shift_reg.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/shift_reg.sv|
 !i113 0
@@ -767,11 +841,11 @@ Im=lY0O4Q78naHGEg^VOQk2
 !i103 1
 S1
 R7
-R26
+R24
 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/include/signals.svh
 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/include/signals.svh
 !i122 132
-R28
+R26
 R9
 31
 !s108 1732305588.000000
@@ -782,7 +856,7 @@ R13
 R2
 vsinglecycle
 R4
-Z44 !s110 1732705955
+Z43 !s110 1732705955
 !i10b 1
 !s100 GeM?MA[UlAeE=3g6fQSA82
 R6
@@ -799,7 +873,7 @@ R9
 r1
 !s85 0
 31
-Z45 !s108 1732705955.000000
+Z44 !s108 1732705955.000000
 !s107 E:/Lecture/ComputerArchitecture/singlecycle_notussingsram/rtl/singlecycle.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/singlecycle_notussingsram/rtl/singlecycle.sv|
 !i113 0
@@ -807,7 +881,7 @@ R13
 R2
 vsinglecycle_tb
 R4
-R44
+R43
 !i10b 1
 !s100 zE7ISch`;2MaHj^6HN3Yk3
 R6
@@ -824,7 +898,7 @@ R9
 r1
 !s85 0
 31
-R45
+R44
 !s107 E:/Lecture/ComputerArchitecture/singlecycle_notussingsram/tb/singlecycle_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/singlecycle_notussingsram/tb/singlecycle_tb.sv|
 !i113 0
@@ -832,7 +906,7 @@ R13
 R2
 vsub_compare
 R4
-R19
+R17
 !i10b 1
 !s100 Ke^>o7o_J96S0k3D;B7V>1
 R6
@@ -842,14 +916,14 @@ R7
 R14
 8E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/sub_compare.sv
 FE:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/sub_compare.sv
-!i122 2927
+!i122 3941
 L0 1 11
 R8
 R9
 r1
 !s85 0
 31
-R21
+R19
 !s107 E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/sub_compare.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/Lecture/ComputerArchitecture/pipeline_notusingsram/rtl/sub_compare.sv|
 !i113 0
