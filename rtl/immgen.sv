@@ -1,4 +1,4 @@
-`include "../rtl//include/opcode_type.svh"
+`include "../rtl/include/opcode_type.svh"
 
 module immgen 
 import opcode_type::*; (

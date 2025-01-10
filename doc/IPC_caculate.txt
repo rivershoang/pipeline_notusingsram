@@ -12,15 +12,13 @@ pipeline 5 stage with forwarding and stall:
 
 application hex to dec number 1654
 single cycle : 214/214
-pipeline 5 stage with stall: 214/540
-pipeline 5 stage with forwarding and stall: 
+pipeline 5 stage with stall: 214/540 = 0.396
 
 
 
-application stopwatch count to 00:10:00 (10s)
-singlecycle: 2018190 / 2018190
-pipeline 5 stage with stall: 2018190 / 513241
-pipeline 5 stage with forwarding and stall: 
+application stopwatch count to 00:10:00 (1s)
+singlecycle: 513241 / 513241
+pipeline 5 stage with stall: 513241/ 2018190
 
 
 

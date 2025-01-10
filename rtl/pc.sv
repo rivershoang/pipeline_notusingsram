@@ -7,12 +7,14 @@ module pc (
 );
   
    always_ff @(posedge clk or negedge rst_n) begin 
-      if (!rst_n) begin 
+      if (~rst_n) begin 
          pc_out <= 0;
-      end else if (pc_enable) begin 
-         pc_out <= pc_in;
-      end else if (~pc_enable) begin 
+      end else begin 
+         if (pc_enable) begin 
+            pc_out <= pc_in;
+         end else begin
          pc_out <= pc_out;
+      end
       end
    end
 

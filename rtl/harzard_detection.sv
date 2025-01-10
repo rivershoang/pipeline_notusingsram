@@ -42,8 +42,7 @@ module harzard_detection (
    assign is_jump  = (instr_E[6:0] == 7'b1101111) ? 1 : 0;
    assign is_jalr = (instr_E[6:0] == 7'b1100111) ? 1 : 0;
 
-   always_comb begin
-      // Default values
+   always_comb begin  
       pc_enable = 1;
       IF_ID_enable = 1;
       ID_EX_enable = 1;
@@ -56,7 +55,12 @@ module harzard_detection (
       ME_WB_flush = 0;
   
       // hazard jalr -> raw -> branch
-      if ((instr_D[6:0] == 7'b1100111) && (rd_addr_E == rs1_addr_D) && (rd_addr_E != 0)) begin
+      if (is_taken && (is_branch || is_jump || is_jalr)) begin
+        pc_enable = 1;
+        IF_ID_flush = 1;
+        ID_EX_flush = 1;
+        ID_EX_enable = 0;
+      end else if ((instr_D[6:0] == 7'b1100111) && (rd_addr_E == rs1_addr_D) && (rd_addr_E != 0)) begin
           pc_enable = 0;
           IF_ID_enable = 0;
           ID_EX_flush = 1;
@@ -86,12 +90,10 @@ module harzard_detection (
           IF_ID_enable = 0;
           ME_WB_flush = 1;
           ID_EX_enable = 0;
-      end else if (is_taken && (is_branch || is_jump || is_jalr)) begin
-          pc_enable = 1;
-          IF_ID_flush = 1;
-          ID_EX_flush = 1;
-          ID_EX_enable = 0;
       end
+
+
   end
+
   
 endmodule 

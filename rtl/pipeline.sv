@@ -77,7 +77,8 @@ module pipeline (
                   insn_vld_E  ,
                   insn_vld_M  ,
                   insn_vld_W  ,
-                  pc_en       ; 
+                  pc_en       ,
+                  insn_tmp    ; 
 
    logic [ 1:0]   wb_sel_D,
                   wb_sel_E,
@@ -317,7 +318,14 @@ module pipeline (
       .is_taken      (is_taken) 
    );
 
-   assign pc_debug = pc_F;
-   assign insn_vld = insn_vld_D;
+   //assign pc_debug = pc_F;
+   assign insn_vld_tmp = insn_vld_W;
+
+   // Hai Cao Xuan
+   always @(posedge clk) begin
+      pc_debug <= pc_F;
+      insn_vld <= insn_vld_tmp;
+   end
+
 
 endmodule

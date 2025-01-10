@@ -12,7 +12,7 @@ module inst_mem #(
 
 	initial
 	begin
-		$readmemh("E:/Lecture/ComputerArchitecture/pipeline_notusingsram/test/forwarding/gcd.hex", ROM);
+		$readmemh("E:/Lecture/ComputerArchitecture/pipeline_notusingsram/test/hazard/s_nam.txt", ROM);
 	end
 	
 	assign rdata = ROM[raddr[ADDR_WIDTH-1:2]];

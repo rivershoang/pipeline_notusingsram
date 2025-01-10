@@ -15,15 +15,19 @@ module IF_ID_reg (
       if (!rst_n) begin 
          instr_D     <= 0;
          pc_D        <= 0;
-      end else if (flush) begin 
+      end else begin 
+         if (flush) begin 
          instr_D     <= 0;
          pc_D        <= 0;
-      end else if (enable) begin
-         instr_D     <= instr_F;
-         pc_D        <= pc_F;
-      end else if (~enable) begin
-         instr_D     <= instr_D;
-         pc_D        <= pc_D;
+         end else begin
+            if (enable) begin
+            instr_D     <= instr_F;
+            pc_D        <= pc_F;
+            end else begin
+            instr_D     <= instr_D;
+            pc_D        <= pc_D;
+            end
+         end
       end
    end
 

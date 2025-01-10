@@ -1,4 +1,4 @@
-`include "../rtl//include/opcode_type.svh"
+`include "../rtl/include/opcode_type.svh"
 
 module control_unit 
 import opcode_type::*; (
